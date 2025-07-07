@@ -381,7 +381,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-leaf me-2"></i>EcoTrack
+                <i class="fas fa-leaf me-2"></i>Carbon Eve
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -534,10 +534,6 @@
                                             <label for="gas" class="form-label">Gas Usage (cubic meters)</label>
                                             <input type="number" class="form-control" id="gas" placeholder="Enter gas usage">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="heating" class="form-label">Heating Days (number of days)</label>
-                                            <input type="number" class="form-control" id="heating" placeholder="Enter heating days">
-                                        </div>
                                         <button type="button" class="btn btn-primary" id="calculateEnergy">Calculate Energy Impact</button>
                                     </form>
                                 </div>
@@ -550,10 +546,6 @@
                                         <div class="mb-3">
                                             <label for="dairy" class="form-label">Dairy Products (kg)</label>
                                             <input type="number" class="form-control" id="dairy" placeholder="Enter dairy products consumption">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="plantBased" class="form-label">Plant-Based Foods (kg)</label>
-                                            <input type="number" class="form-control" id="plantBased" placeholder="Enter plant-based foods consumption">
                                         </div>
                                         <button type="button" class="btn btn-primary" id="calculateFood">Calculate Food Impact</button>
                                     </form>
@@ -872,20 +864,25 @@
                         <h4>Our Team</h4>
                         <p>Our team consists of environmental scientists, software developers, and sustainability experts who are passionate about creating a more eco-conscious world.</p>
                         <div class="row mt-3">
-                            <div class="col-md-4 text-center mb-3">
+                            <div class="col-md-3 text-center mb-3">
                                 <img src="https://picsum.photos/seed/person1/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
-                                <h6>Sarah Johnson</h6>
-                                <p class="text-muted small">Founder & CEO</p>
+                                <h6>Jaskirat Kaur</h6>
+                                <p class="text-muted small">Full stack Developer</p>
                             </div>
-                            <div class="col-md-4 text-center mb-3">
+                            <div class="col-md-3 text-center mb-3">
                                 <img src="https://picsum.photos/seed/person2/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
-                                <h6>Michael Chen</h6>
-                                <p class="text-muted small">Lead Developer</p>
+                                <h6>Shivam Mishra</h6>
+                                <p class="text-muted small">Frontend Developer</p>
                             </div>
-                            <div class="col-md-4 text-center mb-3">
+                            <div class="col-md-3 text-center mb-3">
                                 <img src="https://picsum.photos/seed/person3/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
-                                <h6>Emma Rodriguez</h6>
-                                <p class="text-muted small">Environmental Scientist</p>
+                                <h6>Mayank Sharma</h6>
+                                <p class="text-muted small">UI/UX Designer</p>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <img src="https://picsum.photos/seed/person4/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
+                                <h6>Ayush Goel</h6>
+                                <p class="text-muted small">Team Leader/Backend Developer</p>
                             </div>
                         </div>
                     </div>
@@ -1036,9 +1033,8 @@
                     case 'energy':
                         const electricity = parseFloat(document.getElementById('electricity').value) || 0;
                         const gas = parseFloat(document.getElementById('gas').value) || 0;
-                        const heating = parseFloat(document.getElementById('heating').value) || 0;
                         
-                        impact = (electricity * 0.5) + (gas * 2) + (heating * 0.8);
+                        impact = (electricity * 0.5) + (gas * 2);
                         document.getElementById('energyImpact').textContent = impact.toFixed(1) + ' kg';
                         document.getElementById('energyProgress').style.width = (impact / 50 * 100) + '%';
                         break;
@@ -1046,9 +1042,8 @@
                     case 'food':
                         const meat = parseFloat(document.getElementById('meat').value) || 0;
                         const dairy = parseFloat(document.getElementById('dairy').value) || 0;
-                        const plantBased = parseFloat(document.getElementById('plantBased').value) || 0;
                         
-                        impact = (meat * 27) + (dairy * 3) + (plantBased * 0.5);
+                        impact = (meat * 27) + (dairy * 3);
                         document.getElementById('foodImpact').textContent = impact.toFixed(1) + ' kg';
                         document.getElementById('foodProgress').style.width = (impact / 50 * 100) + '%';
                         break;
