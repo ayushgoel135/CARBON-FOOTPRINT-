@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrack - Carbon Footprint Tracker</title>
+    <title>Carbon Eve - Carbon Footprint Tracker</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -540,6 +540,15 @@
                                 <div class="tab-pane fade" id="food" role="tabpanel">
                                     <form id="foodForm">
                                         <div class="mb-3">
+                                            <label for="dietType" class="form-label">How would you describe your diet?</label>
+                                            <select class="form-select" id="dietType">
+                                                <option value="meat-heavy">Meat-heavy</option>
+                                                <option value="balanced" selected>Balanced</option>
+                                                <option value="vegetarian">Vegetarian</option>
+                                                <option value="vegan">Vegan</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
                                             <label for="meat" class="form-label">Meat Consumption (kg)</label>
                                             <input type="number" class="form-control" id="meat" placeholder="Enter meat consumption">
                                         </div>
@@ -708,8 +717,8 @@
                     <img src="https://picsum.photos/seed/nature2/600/400.jpg" alt="Eco-friendly community" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">About EcoTrack</h2>
-                    <p class="mb-4">EcoTrack is a carbon footprint tracking platform designed to help individuals understand and reduce their environmental impact. Our mission is to empower people with the knowledge and tools they need to make sustainable choices in their daily lives.</p>
+                    <h2 class="fw-bold mb-4">About Carbon Eve</h2>
+                    <p class="mb-4">Carbon Eve is a carbon footprint tracking platform designed to help individuals understand and reduce their environmental impact. Our mission is to empower people with the knowledge and tools they need to make sustainable choices in their daily lives.</p>
                     <p class="mb-4">Our team of environmental scientists and developers have created a comprehensive system that calculates carbon emissions across various aspects of your lifestyle, from transportation and energy use to food consumption and shopping habits.</p>
                     <div class="d-flex gap-3">
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">Learn More</button>
@@ -725,7 +734,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="footer-title">EcoTrack</h5>
+                    <h5 class="footer-title">Carbon Eve</h5>
                     <p>Helping you track and reduce your carbon footprint for a healthier planet.</p>
                     <div class="mt-4">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -763,7 +772,7 @@
             </div>
             <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
             <div class="text-center">
-                <p class="mb-0">&copy; 2023 EcoTrack. All rights reserved.</p>
+                <p class="mb-0">&copy; 2023 Carbon Eve. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -778,7 +787,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Sign Up for EcoTrack</h5>
+                    <h5 class="modal-title">Sign Up for Carbon Eve</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -816,7 +825,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Log In to EcoTrack</h5>
+                    <h5 class="modal-title">Log In to Carbon Eve</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -846,41 +855,37 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">About EcoTrack</h5>
+                    <h5 class="modal-title">About Carbon Eve</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6 mb-4 mb-md-0">
-                            <img src="https://picsum.photos/seed/nature3/400/300.jpg" alt="EcoTrack Team" class="img-fluid rounded">
+                            <img src="https://picsum.photos/seed/nature3/400/300.jpg" alt="Carbon Eve Team" class="img-fluid rounded">
                         </div>
                         <div class="col-md-6">
                             <h4>Our Mission</h4>
-                            <p>EcoTrack was founded with a simple mission: to empower individuals to make sustainable choices by understanding their environmental impact.</p>
+                            <p>Carbon Eve was founded with a simple mission: to empower individuals to make sustainable choices by understanding their environmental impact.</p>
                             <p>Our platform combines scientific research with user-friendly technology to provide accurate carbon footprint calculations and actionable recommendations.</p>
                         </div>
                     </div>
                     <div class="mt-4">
                         <h4>Our Team</h4>
-                        <p>Our team consists of environmental scientists, software developers, and sustainability experts who are passionate about creating a more eco-conscious world.</p>
+                        <p>Our team consists of software developers who are passionate about creating a more eco-conscious world.</p>
                         <div class="row mt-3">
                             <div class="col-md-3 text-center mb-3">
-                                <img src="https://picsum.photos/seed/person1/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
                                 <h6>Jaskirat Kaur</h6>
                                 <p class="text-muted small">Full stack Developer</p>
                             </div>
                             <div class="col-md-3 text-center mb-3">
-                                <img src="https://picsum.photos/seed/person2/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
                                 <h6>Shivam Mishra</h6>
                                 <p class="text-muted small">Frontend Developer</p>
                             </div>
                             <div class="col-md-3 text-center mb-3">
-                                <img src="https://picsum.photos/seed/person3/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
                                 <h6>Mayank Sharma</h6>
                                 <p class="text-muted small">UI/UX Designer</p>
                             </div>
                             <div class="col-md-3 text-center mb-3">
-                                <img src="https://picsum.photos/seed/person4/100/100.jpg" alt="Team Member" class="rounded-circle mb-2" width="80">
                                 <h6>Ayush Goel</h6>
                                 <p class="text-muted small">Team Leader/Backend Developer</p>
                             </div>
@@ -1040,10 +1045,33 @@
                         break;
                         
                     case 'food':
+                        const dietType = document.getElementById('dietType').value;
                         const meat = parseFloat(document.getElementById('meat').value) || 0;
                         const dairy = parseFloat(document.getElementById('dairy').value) || 0;
                         
-                        impact = (meat * 27) + (dairy * 3);
+                        // Base impact calculations
+                        let meatImpact = meat * 27;
+                        let dairyImpact = dairy * 3;
+                        
+                        // Apply diet type modifiers
+                        switch(dietType) {
+                            case 'meat-heavy':
+                                meatImpact *= 1.2; // 20% higher impact for meat-heavy diets
+                                break;
+                            case 'balanced':
+                                // No modifier for balanced diet
+                                break;
+                            case 'vegetarian':
+                                meatImpact = 0; // No meat impact for vegetarians
+                                dairyImpact *= 1.1; // Slightly higher dairy consumption
+                                break;
+                            case 'vegan':
+                                meatImpact = 0; // No meat impact for vegans
+                                dairyImpact = 0; // No dairy impact for vegans
+                                break;
+                        }
+                        
+                        impact = meatImpact + dairyImpact;
                         document.getElementById('foodImpact').textContent = impact.toFixed(1) + ' kg';
                         document.getElementById('foodProgress').style.width = (impact / 50 * 100) + '%';
                         break;
@@ -1094,13 +1122,13 @@
                     energy: energyImpact,
                     food: foodImpact,
                     shopping: shoppingImpact
-                });
+                }, { dietType: document.getElementById('dietType').value });
                 
                 showToast('Carbon impact calculated successfully!', 'success');
             }
             
             // Function to update personalized tips
-            function updatePersonalizedTips(total, impacts) {
+            function updatePersonalizedTips(total, impacts, additionalData = {}) {
                 const tipsContainer = document.getElementById('personalizedTips');
                 let tipsHTML = '';
                 
@@ -1185,6 +1213,42 @@
                                 </div>
                             `;
                             break;
+                    }
+                    
+                    // Add diet-specific tips if available
+                    if (additionalData.dietType) {
+                        switch(additionalData.dietType) {
+                            case 'meat-heavy':
+                                tipsHTML += `
+                                    <div class="eco-tip mb-3">
+                                        <div class="eco-tip-title">
+                                            <i class="fas fa-utensils me-2"></i>Diet Suggestion
+                                        </div>
+                                        <p class="eco-tip-text">Your diet is meat-heavy, which has a high carbon footprint. Consider reducing meat portions or having meat-free days.</p>
+                                    </div>
+                                `;
+                                break;
+                            case 'vegetarian':
+                                tipsHTML += `
+                                    <div class="eco-tip mb-3">
+                                        <div class="eco-tip-title">
+                                            <i class="fas fa-utensils me-2"></i>Diet Suggestion
+                                        </div>
+                                        <p class="eco-tip-text">Great job with a vegetarian diet! To further reduce impact, consider plant-based dairy alternatives.</p>
+                                    </div>
+                                `;
+                                break;
+                            case 'vegan':
+                                tipsHTML += `
+                                    <div class="eco-tip mb-3">
+                                        <div class="eco-tip-title">
+                                            <i class="fas fa-utensils me-2"></i>Diet Suggestion
+                                        </div>
+                                        <p class="eco-tip-text">Excellent choice with a vegan diet! You're already making a significant positive environmental impact.</p>
+                                    </div>
+                                `;
+                                break;
+                        }
                     }
                     
                     // Add general tips
